@@ -2,12 +2,43 @@
 %-------------------------------------------------------------------------------
 \section{Introduction}
 %-------------------------------------------------------------------------------
-\noindent Economists use structural microeconometric models to study individual decision-making. These models specify the objective of individuals, their economic environment, and the institutional and informational constraints under which they operate. Calibration of the model to observed data on individual decisions and experiences allows quantifying the importance of competing economic mechanisms in determining economic outcomes and forecasting the effects of policy proposals \citep{Wolpin.2013}.\\
+I created a platform for economists, mathematicians, and computational scientists to facilitate the transdisciplinary collaboration in the development, analysis, and application of computational economic models. Our goal is to expand the set of possible economic questions that we can address and improve the quality of our answers.\\
 
-\noindent We restrict our exposition to the class of Eckstein-Keane-Wolpin (EKW) models \citep{Adda.2017, Blundell.2016, Keane.1997}. Labor economists use them to study human capital investment decisions. Human capital comprises the knowledge, skills, competencies, and attributes embodied in individuals facilitating the creation of personal, social, and economic well-being \citep{Becker.1964}. Differences in human capital attainment lead to inequality in various life outcomes such as labor market success and health across and within countries \citep{OECD.2001}.
+\noindent I organize this collaboration around an ensemble of versatile research codes that allow for the analysis of different classes of economic model. These codes are systematically developed, thoroughly tested, well documented, and actively used. Their architecture allows focusing on selected mathematical and computational challenges within a deliberately simplified model while offering the immediate ability to scale up to a full-fledged research project.\\
 
-In \citet{Bhuller.2018}, for example, we apply an EKW model to analyze the mechanisms determining schooling decisions in Norway. We calibrate the model using Norwegian population panel data with nearly career-long earnings histories. After validating our model using a mandatory schooling reform, we gain insights into the underlying economic mechanisms that generate the effects of the policy and forecast the impacts of several policy alternatives.\\
+\noindent At this point, we are about 35 individuals with different level of involvement from all levels of the academic hierarchy ranging from professors to bachelor students and we just received funding by the Excellence Strategy to scale up our initiatives.\\
 
-\noindent We offer this handout to facilitate transdisciplinary collaboration in the future development of EKW models. We first describe their economic framework, mathematical formulation, and calibration procedure. We then turn to the seminal model outlined in \citet{Keane.1997} as an example and present our group's ensemble of research codes that allow for its specification, simulation, and calibration. Finally, we summarize our efforts drawing on research outside economics to address the computational challenges in applying EKW models and improve the reliability and interpretability of their results.\\
+\noindent So, let me now tell you what we do, how we do it, and with whom,
 
-\noindent Throughout, we only offer a limited number of seminal references and textbooks that invite further study. We introduce acronyms and symbols as needed, and our notation draws on the reviews by \cite{Aguirregabiria.2010}, \cite{Arcidiacono.2011}, and \cite{Puterman.1994}.
+\subsubsection*{Research codes}
+
+It is useful to distinguish two groups of research codes. The first group implements particular economic models, while the second group provides model-agnostic capabilities for their analysis.
+
+\begin{itemize}
+\item \textbf{respy} finite discrete-Markov decision process, often used to model human capital investment decisions
+\item \textbf{pydsge},
+\item \textbf{ruspy} infinite horizon Markov decision problem, often used to model firm investment behaviors
+\end{itemize}
+
+We created a pipeline for the analysis of these models.
+
+\begin{itemize}
+\item \textbf{estimagic}, global optimization for the calibration of computational economic models
+\item \textbf{econsa}, uncertainty analysis
+\item \textbf{robupy} robust optimization
+\end{itemize}
+
+\noindent My own involvement in the development and application of these research codes varies considerably. While I am an active developer for some, I am guiding development by my students in other, and for some I do not have much of a say at all. I am now more and more moving into the supervisory activity.\\
+
+\noindent While I wrote the first release for several of these packages, I am nowadays mostly guiding their development thorough the identification of research needs. This is only possible while maintaining the quality of the software architecture and the computational implementation by adopting a sound software engineering workflow and training capable contributors.
+
+\subsubsection*{Workflow}
+
+
+If you are interested, we have our website at open-econ.org
+
+
+%-------------------------------------------------------------------------------
+\subsubsection*{Collaboration}
+%-------------------------------------------------------------------------------
+We have now used this platform to start several collaborations.

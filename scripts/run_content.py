@@ -10,9 +10,16 @@ def compile_material(task):
 
     os.chdir(os.environ["PROJECT_DIR"] + f"/{task}")
 
+    if "slides" in task:
+        biber = "biber"
+    elif "paper" in task:
+        biber = "pdflatex"
+    else:
+        raise AssertionError
+
     [
         sp.check_call([cmd, "main"])
-        for cmd in ["pdflatex", "bibtex", "pdflatex", "pdflatex"]
+        for cmd in ["pdflatex", biber, "pdflatex", "pdflatex"]
     ]
 
     os.chdir(os.environ["PROJECT_DIR"])
