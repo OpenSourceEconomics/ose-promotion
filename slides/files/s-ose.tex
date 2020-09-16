@@ -1,42 +1,87 @@
-% !TEX root = ../main_presentation.tex
+% !TEX root = ../main.tex
 %-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
-\section{Open Source Economics}
-%-------------------------------------------------------------------------------
-%-------------------------------------------------------------------------------
-\begin{frame}\frametitle{Structural econometric modeling in economics}
+\begin{frame}\frametitle{In a nutshell}
+\hspace{1.5cm}
+\\
+\vspace{1cm}
+\begin{quote}
+	\large
+	\raggedright
+	We provide a platform for economists, mathematicians, and computational scientists to facilitate the transdisciplinary collaboration in the development, analysis, and application of computational economic models. Together, we expand the set of possible economic questions that we can address and improve the quality of our	answers.
+\end{quote}
 
-\vspace{0.3cm}\heading{Transdisciplinary in nature}\vspace{0.3cm}
 
+\end{frame}
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\begin{frame}\frametitle{Computational modeling in economics}
+
+	\begin{multicols}{2}
+	\heading{Motivation}\vspace{0.3cm}
 	\begin{itemize}\setlength\itemsep{1em}
-		\item Economic model
-		\item Mathematical framework
-		\item Computational implementation
-	\end{itemize}\vspace{0.3cm}
+	\item Facilitate learning
+	\item Study mechanisms
+	\item Predict public policies
+	\end{itemize}
 
-\pause
+	\pause
 
-$\Rightarrow$ Now funded through the \alert{Excellence Strategy}
+  \heading{Transdisciplinary in nature}\vspace{0.3cm}
+	\begin{itemize}\setlength\itemsep{1em}
+	\item Economic model
+	\item Mathematical framework
+	\item Computational implementation
+	\end{itemize}
+	\end{multicols}
+
+\end{frame}
+
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\begin{frame}\frametitle{New tooling for an old idea}
+
+\centering
+\includegraphics[width=0.85\textwidth]{material/crop-adam-smith.pdf}\\
+
+\end{frame}
+
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\begin{frame}\frametitle{Partners}\vspace{1.0cm}
+
+\begin{columns}[t]
+
+\column{.5\textwidth}
+\centering \\  \vspace{-1.25cm}
+    % Institute for Numerical Simulation
+	\includegraphics[width=0.3\textwidth]{material/crop-cooperation-ins.png} \\\vspace{-0.5cm}
+		\footnotesize{Institute for \\ Numerical Simulation}\vspace{0.3cm}   \\ \vspace{0.5cm}  
+	% DIW
+	\includegraphics[width=0.45\textwidth]{material/crop-cooperation-diw.png} \\ \vspace{0.5cm}
+	% Statistics Norway
+	\includegraphics[width=0.55\textwidth]{material/crop-cooperation-ssb.png} \\
+ 
+\column{.5\textwidth}
+	\centering \\ \vspace{-0.5cm} 
+	% Smart Data Analytics
+	\includegraphics[width=0.575\textwidth]{material/crop-cooperation-sda.png} \\ \vspace{0.85cm}
+	% LIMES
+	\includegraphics[width=0.425\textwidth]{material/crop-cooperation-limes.png} \\ \vspace{0.4cm}
+	% Lausanne
+ 	\includegraphics[width=0.4\textwidth]{material/crop-cooperation-lausanne.png} \\
+
+\column{.5\textwidth}
+\centering \\
+
+\end{columns}
 
 \end{frame}
 %-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
 \begin{frame}\frametitle{What we are doing}
 
-\alert{Economic models}\vspace{0.3cm}
-\hspace{3.25cm}%
-\raisebox{0pt}[0pt][0pt]{%
-	\parbox[t]{0.57\textwidth}{%
-		\only<5->{%
-			\heading{Challenges}
-			\begin{itemize}\setlength\itemsep{1em}
-				\item<5-> adapt to needs of economists
-				\item<6-> impose professional software engineering workflow
-				\item<7-> offer systematic training for contributors
-			\end{itemize}
-		}%
-	}%
-}%
+\alert{Economic models}
 
 \begin{itemize}\setlength\itemsep{1em}
 	\item \makebox[2.25cm][l]{\alert<1>{respy}}
@@ -53,57 +98,75 @@ $\Rightarrow$ Now funded through the \alert{Excellence Strategy}
                                 Industrial organization
                         }
                 }
+
+		\item \makebox[2.25cm][l]{\alert<3>{pydsge}}
+										\only<3>{
+														\explanation{
+														Dynamic stochastic general equilibrium model\\
+														Monetary economics
+														}
+										}
+
 \end{itemize}
 
-\only<3->{%\vspace{0.3cm}
+\end{frame}
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\begin{frame}\frametitle{What we are doing}
+
 	\heading{Analysis pipeline}\vspace{0.3cm}
 
 	\begin{itemize}\setlength\itemsep{1em}
-	        \item \makebox[2.25cm][l]{\alert<3>{estimagic}}
-	                \only<3>{
+	        \item \makebox[2.25cm][l]{\alert<1>{estimagic}}
+	                \only<1>{
 	                        \explanation{
 													Numerical optimization \\
 	                                Estimating structural econometric models
 	                        }
 	                }
-					\item \makebox[2.25cm][l]{\alert<4>{econsa}}
-	                \only<4>{
+					\item \makebox[2.25cm][l]{\alert<2>{econsa}}
+	                \only<2>{
 	                        \explanation{%
 													Sensitivity analysis \\
 																	Assessing uncertainty of model implications
 																	                        }
 	                }
+
+									\item \makebox[2.25cm][l]{\alert<3>{robupy}}
+					                \only<3>{
+					                        \explanation{%
+																	Robust optimization \\
+																					Incorporating model ambiguity
+																					                        }
+					                }
+
 	\end{itemize}
-}
 
 \end{frame}
 %-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
-\begin{frame}\frametitle{Partners}\vspace{1.0cm}
+\begin{frame}\frametitle{Development}
 
-\begin{columns}[t]
-	\column{.5\textwidth}
-	\centering \\
-  % Institute for Numerical Simulation
-  \includegraphics[width=0.3\textwidth]{material/crop-cooperation-ins.png} \\\vspace{-0.5cm}
-  \footnotesize{Institute for \\ Numerical Simulation}\vspace{0.3cm}
+	\begin{multicols}{2}
+	\heading{Workflow}\vspace{0.3cm}
+	\begin{itemize}\setlength\itemsep{1em}
+	\item GitHub organization
+	\item Code reviews
+	\item Testing harness
+	\item Continuous integration
+	\end{itemize}
 
+\columnbreak
+	\pause
 
-
-  % HEC Lausanne
-	\column{.5\textwidth}
-	\centering
-
-	% Statistics Norway
-	% Institute for Numerical Simulation
-  \includegraphics[width=0.45\textwidth]{material/crop-cooperation-limes.png}\\
-	\vspace{1.75cm}
-  \includegraphics[width=0.45\textwidth]{material/crop-cooperation-lausanne.png} \\
-
-  \column{.5\textwidth}
-  \centering \\
-
-\end{columns}
+  \heading{Support}\vspace{0.3cm}
+	\begin{itemize}\setlength\itemsep{1em}
+	\item Documentation
+	\item Chatroom
+	\item Hackathon
+	\item Conferences
+	\end{itemize}
+	\end{multicols}
 
 \end{frame}
 %-------------------------------------------------------------------------------
