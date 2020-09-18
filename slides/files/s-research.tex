@@ -24,6 +24,14 @@
 
 \end{multicols}
 
+ \pause
+\heading{Mathematical framework and implementation}\vspace{0.3cm}
+\begin{itemize}\setlength\itemsep{1em}
+	\item Finite-horizon discrete Markov decision problem
+	\item Backward induction algorithm
+\end{itemize}
+
+
 \pause
 
 \hspace{0.3cm}$\Rightarrow$ transdisciplinary research on their \alert<4>{economics}, \alert<5>{data}, and \alert<6>{computation}
@@ -41,21 +49,24 @@
                 \only<1>{
                         \explanation{
                                 Incorporate subjective expectations\\
-                                Collaboration with DIW for SOEP-IS data collection
+                                Collaboration with DIW for SOEP-IS data collection\\
+																Facilitating development of \alert{soepy} and \alert{respy}
                         }
                 }
 	\item \makebox[4cm][l]{\alert<2>{Robust decisions}}
                 \only<2>{
                         \explanation{
                                 Account for ubiquitous uncertainties \\
-                                Robust decision in light of model misspecification
+                                Robust decision in light of model misspecification\\
+																Building on \alert{respy} and \alert{robupy}
                         }
                 }
 	\item \makebox[4cm][l]{\alert<3>{Option value}}
                 \only<3>{
                         \explanation{%
                                 Schooling reform for identification and validation\\
-                                Collaboration with Statistics Norway
+                                Collaboration with Statistics Norway\\
+																Extension of \alert{respy} to capture schooling system
 						}
                 }
 
@@ -73,21 +84,24 @@
                 \only<1>{
                         \explanation{
                                 Capture parametric uncertainty\\
-                                Assess competing policy implications
+                                Assess competing policy implications\\
+																Need to adapt \alert{econsa} to challenges in economic models
                         }
                 }
                 \item \makebox[4.5cm][l]{\alert<2>{Global optimization}}
                 \only<2>{
                         \explanation{%
                                 Explore estimation uncertainty\\
-                                Acknowledge multiplicity of local minima
+                                Acknowledge multiplicity of local minima\\
+																Show use-case for \alert{estimagic} features
                                   }
                 }
   \item \makebox[4.5cm][l]{\alert<3>{HPC implementation}}
                         \only<3>{
                                 \explanation{
                                 Enable increased realism and auditing of economic models\\
-                                Exploit large-scale parallelism on supercomputers
+                                Exploit large-scale parallelism on supercomputers\\
+																Refactor \alert{respy} to meet needs
                                 }
                         }
 \end{itemize}
