@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 """This script compiles the content of the repository."""
-import subprocess as sp
 import argparse
-import shutil
 import os
+import shutil
+import subprocess as sp
 
 
 def compile_material(task):
