@@ -6,9 +6,8 @@ channels:
   - OpenSourceEconomics
 
 dependencies:
-  - python=3.7.3
   - pypdf2 
-  - pip=19.0.3
+  - pip
   - chaospy
   - click
   - codecov
@@ -20,7 +19,7 @@ dependencies:
   - jupyterlab
   - matplotlib>=3.0.0
   - mkl
-  - nbsphinx=0.4.2
+  - nbsphinx
   - numba>=0.43.1
   - numpydoc
   - pandas<1.00
