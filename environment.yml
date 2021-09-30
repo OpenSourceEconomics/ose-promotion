@@ -1,0 +1,20 @@
+name: ose-promotion
+
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - pypdf2 
+  - pip
+  - doc8
+  - restructuredtext_lint
+  - black
+  - flake8
+  - pytest-flake8
+  - pytest
+  - tox-conda
+  - pip:
+      - pre-commit
+      - pysftp
+      - pytest-black

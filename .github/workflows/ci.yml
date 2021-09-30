@@ -12,7 +12,7 @@ jobs:
     - uses: conda-incubator/setup-miniconda@v2
       with:
            activate-environment: ekw-promotion
-           environment-file: configurations/environment.yml
+           environment-file: environment.yml
            auto-activate-base: false
            
     - name: install latex dependencies
