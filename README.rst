@@ -1,4 +1,4 @@
-.. |logo| image:: slides/material/OSE-logo-no-type-RGB.svg
+.. |logo| image:: slides/material/OSE-logo-no-type-RGB.pdf
    :height: 25px
 
 |logo| OSE promotion
@@ -25,6 +25,6 @@ This material is under constant development but you can access its most recent v
 Supported by
 ------------
 
-.. image:: slides/material/OSE-logo-RGB.svg
+.. image:: slides/material/OSE-logo-RGB.pdf
     :width: 22 %
     :target: https://github.com/OpenSourceEconomics
